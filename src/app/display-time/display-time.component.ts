@@ -14,6 +14,8 @@ export class DisplayTimeComponent implements OnInit{
   data = [];
   ShabbatData: any;
   geoNameId = 3094802;
+  long = 19.93658;
+  lat = 50.06143;
 
 
 

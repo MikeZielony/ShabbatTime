@@ -1,11 +1,7 @@
-<input [(ngModel)]="geoNameId" class="form-control" id="name"
-       required
-       type="text">
+<input [(ngModel)]="geoNameId" class="form-control" id="name" required type="text">
 {{geoNameId}}
 <button (click)="shabbatTime()" type="button">Button</button>
-
-
-<h1>Data for {{ShabbatData.location.city}}</h1>
+<h1> Data for {{ShabbatData.location.city}}</h1>
 <h3> {{ShabbatData.items[0].memo}}</h3>
 <div style="font-size: 32px;margin-top: 5px;"> {{ShabbatData.location.city}}</div><br>
 <div
