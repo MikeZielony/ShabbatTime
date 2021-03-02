@@ -14,8 +14,6 @@ export class DisplayTimeComponent implements OnInit{
   data = [];
   ShabbatData: any;
   geoNameId = 3094802;
-  long = 19.93658;
-  lat = 50.06143;
 
 
 
@@ -23,7 +21,6 @@ export class DisplayTimeComponent implements OnInit{
     this.httpService.getData(this.geoNameId);
   }
   ngOnInit() {
-    registerLocaleData( 'pl-PL');
     this.ShabbatData = {
       items: []
     };

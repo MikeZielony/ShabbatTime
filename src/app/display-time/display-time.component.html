@@ -2,17 +2,17 @@
 {{geoNameId}}
 <button (click)="shabbatTime()" type="button">Button</button>
 <h1> Data for {{ShabbatData.location.city}}</h1>
-<h3> {{ShabbatData.items[0].memo}}</h3>
+<h2>{{ShabbatData.items[1].title_orig}}</h2>
+<h3> {{ShabbatData.items[1].memo}}</h3>
 <div style="font-size: 32px;margin-top: 5px;"> {{ShabbatData.location.city}}</div><br>
 <div
-  style="font-size: 22px;color: crimson"> {{ShabbatData.items[1].date | date:'fullDate'}}  {{ShabbatData.items[1].title}}
+  style="font-size: 22px;color: crimson"> {{ShabbatData.items[0].date | date:'fullDate'}}  {{ShabbatData.items[0].title}}
 </div><br>
 
 <div style="font-size: 22px"> {{ShabbatData.items[2].title}}</div><br>
-<div  style="font-size: 22px;color: darkblue"> {{ShabbatData.items[3].date | date: 'fullDate'}} {{ShabbatData.items[4].title}}</div><br>
-<div> {{ShabbatData.items[3].title}}</div>
+<div  style="font-size: 22px;color: darkblue"> {{ShabbatData.items[3].date | date: 'fullDate'}} {{ShabbatData.items[3].title}}</div><br>
 
-<div>Torah:  {{ShabbatData.items[0].leyning.torah}}</div>
+<div>Torah:  {{ShabbatData.items[2].leyning.torah}}</div>
 <div>Maftir:  {{ShabbatData.items[2].leyning.maftir}}</div>
 <div>Haftarah:  {{ShabbatData.items[2].leyning.haftarah}}</div>
 <h3>&copy; MikeZielony</h3>
